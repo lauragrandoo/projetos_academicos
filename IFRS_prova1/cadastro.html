@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="prova desenvolvimento web">
+    <meta name="author" content="laura grando">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+
+    <table cellpadding="10">
+        <tr>
+            <th><a href="index.html"><img src="images/logoifrs.png" width="180" height="80"></a></th>
+            <th><a href="tabela_nutricional.html"><h3>Tabela nutricional</h3></a></th>
+            <th><a href="cadastro.html"><h3>Cadastre-se</h3></a></th>
+        </tr>
+    </table>
+
+
+    <h1>Cadastre-se na Fruteira do IFRS</h1>
+
+    <form action="https://ifrs.edu.br/provaads1.php" method="get">
+
+        <label for="name">Nome completo*:</label><br>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome completo" size="50" required><br><br>
+
+
+        <label for="dtn">Data Nascimento*:</label><br>
+        <input type="date" id="dtn" name="dtn" required><br><br>
+
+
+        <label for="email">Email*:</label><br>
+        <input type="email" id="email" name="email" placeholder="Digite o email" size="40" required><br><br>
+
+
+        <label for="idade">Idade*:</label><br>
+        <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required minlength="0" required maxlength="110" required><br><br>
+
+
+        <label for="meet">Como nos conheceu?*:</label>
+        <input type="radio" name="meet" id="1" value="1">
+        <label for="meet">TV</label>
+        <input type="radio" name="meet" id="2" value="2">
+        <label for="meet">Internet</label>
+        <input type="radio" name="meet" id="3" value="3">
+        <label for="meet">Jornal</label>
+        <input type="radio" name="meet" id="4" value="4">
+        <label for="meet">Rádio</label><br>
+
+
+        <label for="fruta_fav">Fruta Preferida</label><br>
+        <select id="fruta_fav" name="fruta_fav">
+            <option value="maca">Maça</option>
+            <option value="manga">Manga</option>
+            <option value="outra">Outra</option>
+        </select><br><br><br><br><br>
+
+
+        <label for="novidades_email">Receber novidades por email</label>
+        <input type="checkbox" id="novidades_email" name="novidades_email"><br><br>
+
+
+        <input type="submit" id="enviar" name="enviar" value="Enviar">
+        <input type="reset" id="limpar" name="limpar" value="Limpar">
+
+    </form>
+    
+</body>
+
+</html>
