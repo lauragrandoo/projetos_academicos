@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="atividade desenvolvimento web">
+    <meta name="author" content="laura grando">
+    <title>Inscrição</title>
+</head>
+
+<body>
+
+    <table cellpadding="12">
+        <tr>
+            <td><a href="index.html"><img src="midia/logo.webp" width="80" height="80"></a></td>
+            <td><a href="index.html">Início</a></td>
+            <td><a href="inscricao.html">Inscrição</a></td>
+            <td><a href="horarios.html">Horários</a></td>
+            <td><a href="contato.html">Contato</a></td>
+        </tr>
+    </table>
+
+    <h1>Formulário de Inscrição</h1>
+    <form action="https://escola.ifrs.edu/cadastro.php" method="get">
+        
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu Nome" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Seu Email" required><br><br>
+
+        <label for="dtn">Data de Nascimento:</label><br>
+        <input type="date" id="dtn" name="dtn" required><br><br>
+
+        <label for="curso">Curso desejado:</label><br>
+        <select name="curso" id="curso" required>
+            <option value="violao">Violão</option>
+            <option value="piano">Piano</option>
+            <option value="bateria">Bateria</option>
+        </select><br><br>
+
+        <label for="turno">Horário Preferido:</label><br>
+        <input type="radio" name="turno" id="manha" value="m" required>
+        <label for="manha"> manhã </label>
+        <input type="radio" name="turno" id="tarde" value="t">
+        <label for="tarde"> tarde </label> 
+        <input type="radio" name="turno" id="noite" value="n">
+        <label for="noite"> noite </label><br><br>
+
+        <input type="submit" id="botao_enviar" name="botao_enviar" value="Enviar">
+        <input type="reset" id="botao_limpar" name="botao_limpar" value="Limpar">
+
+    </form>
+
+</body>
+
+</html>
